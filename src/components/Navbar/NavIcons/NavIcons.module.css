@@ -1,11 +1,15 @@
 .NavIcons {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  margin-right: 5vw;
 }
 
 .IconColor {
   margin-left: 1vw;
   font-size: 2em;
-  color: white;
+  color: #f8f8f8;
+}
+
+.IconColor:hover {
+  color: rgb(100, 166, 216);
 }

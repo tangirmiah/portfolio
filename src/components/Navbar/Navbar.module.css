@@ -1,12 +1,12 @@
 .Nav {
   background-color: #033e6b;
+  position: fixed;
+  width: 100%;
   height: 10vh;
   top: 0;
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-family: "Assistant", sans-serif;
   color: #f8f8f8;
-  padding: 0 3vw;
 }

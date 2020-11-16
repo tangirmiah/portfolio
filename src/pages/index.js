@@ -1,11 +1,16 @@
 import React from "react"
 import "./main.css"
 import Layout from "../components/Layout/Layout"
+import HomeSection from "./Sections/HomeSection"
+import AboutSection from "./Sections/AboutSection"
 
 export default function Home() {
   return (
     <>
-      <Layout>this is my page</Layout>
+      <Layout>
+        <HomeSection />
+        <AboutSection />
+      </Layout>
     </>
   )
 }

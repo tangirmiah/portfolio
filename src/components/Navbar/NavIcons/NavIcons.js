@@ -9,7 +9,7 @@ import {
 
 const NavIcons = () => {
   return (
-    <div classname={classes.NavIcons}>
+    <div className={classes.NavIcons}>
       <a href="https://github.com/tangirmiah" target="blank">
         <AiOutlineGithub className={classes.IconColor} />
       </a>

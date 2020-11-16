@@ -1,0 +1,11 @@
+.About {
+  height: 100vh;
+  width: 100%;
+  background-color: #033e6b;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 62, 107, 1) 0%,
+    rgba(248, 248, 248, 1) 100%
+  );
+  z-index: -10;
+}

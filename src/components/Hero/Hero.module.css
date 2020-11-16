@@ -1,0 +1,21 @@
+.HeroContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30vh 2em 0;
+}
+.HeroTitle {
+  color: #f8f8f8;
+  font-size: 7em;
+}
+
+.HeroPara {
+  font-weight: lighter;
+  color: #f8f8f8;
+  font-size: 3em;
+}
+
+.HeroPara span {
+  font-weight: 700;
+}

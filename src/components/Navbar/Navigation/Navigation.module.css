@@ -1,12 +1,15 @@
 .Navigation {
+  /* align-self: flex-start; */
+  margin-left: 5vw;
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  /* width: 20%; */
 }
 .Navigation a {
   color: #f8f8f8;
   text-decoration: none;
   position: relative;
+  margin-right: 20px;
 }
 
 .Navigation a::before {
