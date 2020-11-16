@@ -1,0 +1,11 @@
+.NavIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.IconColor {
+  margin-left: 1vw;
+  font-size: 2em;
+  color: white;
+}

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   width: 20%;
-  padding: 0 3vw;
 }
 .Navigation a {
   color: #f8f8f8;
