@@ -1,0 +1,11 @@
+.Nav {
+  background-color: #033e6b;
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Assistant", sans-serif;
+  color: #f8f8f8;
+}

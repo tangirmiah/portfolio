@@ -1,0 +1,9 @@
+.Layout {
+  width: 100%;
+ 
+}
+
+.Main {
+  display: flex;
+  justify-content: center;
+}

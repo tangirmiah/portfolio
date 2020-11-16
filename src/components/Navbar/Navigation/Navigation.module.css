@@ -1,0 +1,28 @@
+.Navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  padding: 0 3vw;
+}
+.Navigation a {
+  color: #f8f8f8;
+  text-decoration: none;
+  position: relative;
+}
+
+.Navigation a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f8f8;
+  visibility: hidden;
+
+  transition: all 0.3s ease-in-out 0s;
+}
+.Navigation a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
