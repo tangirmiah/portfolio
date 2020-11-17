@@ -7,7 +7,7 @@ const Navbar = props => {
   return (
     <nav className={classes.Nav}>
       <Navigation />
-      <NavIcon/>
+      <NavIcon />
     </nav>
   )
 }

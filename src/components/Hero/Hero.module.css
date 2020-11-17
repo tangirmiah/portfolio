@@ -1,9 +1,17 @@
 .HeroContainer {
   height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
   padding: 30vh 2em 0;
+}
+.HeroContainer a {
+  position: relative;
+
+  color: white;
+  cursor: pointer;
 }
 .HeroTitle {
   color: #f8f8f8;
@@ -18,4 +26,24 @@
 
 .HeroPara span {
   font-weight: 700;
+}
+
+.Arrow {
+  align-self: center;
+  color: white;
+  font-size: 2em;
+  margin-top: 30vh;
+  animation: arrowMove 2s infinite ease-in-out;
+}
+
+@keyframes arrowMove {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
 }

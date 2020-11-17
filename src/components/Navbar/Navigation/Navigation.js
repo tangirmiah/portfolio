@@ -5,8 +5,8 @@ import classes from "./Navigation.module.css"
 const Navigation = props => {
   return (
     <div className={classes.Navigation}>
-      <Link to="/"> Home </Link>
-      <Link to="/"> About </Link>
+      <Link to="/#HomeSection"> Home </Link>
+      <Link to="/#AboutSection"> About </Link>
       <Link to="/"> Project </Link>
       <Link to="/"> Contact </Link>
     </div>

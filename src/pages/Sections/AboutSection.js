@@ -1,10 +1,14 @@
 import React from "react"
 import classes from "./AboutSection.module.css"
-
+import { Link } from "gatsby"
 import ParticlesBg from "particles-bg"
 
 const AboutSection = () => {
-  return <div className={classes.About}>asdasdasd</div>
+  return (
+    <div id="AboutSection" className={classes.About}>
+      <Link to="/#HomeSelection">asdasd</Link>
+    </div>
+  )
 }
 
 export default AboutSection

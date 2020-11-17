@@ -1,5 +1,7 @@
 import React from "react"
 import classes from "./Hero.module.css"
+import { Link } from "gatsby"
+import { BsChevronDoubleDown } from "react-icons/bs"
 
 const Hero = props => {
   return (
@@ -8,6 +10,9 @@ const Hero = props => {
       <p className={classes.HeroPara}>
         A Junior Web <span>Developer</span>
       </p>
+      <Link to="/#AboutSection" className={classes.Arrow}>
+        <BsChevronDoubleDown />
+      </Link>
     </div>
   )
 }

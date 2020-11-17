@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   background-color: rgb(3, 62, 107);
-  z-index: -10;
+  z-index: 0;
 }
 
 .ParticleBg {
@@ -13,3 +13,4 @@
     rgba(3, 62, 107, 1) 90%
   );
 }
+
