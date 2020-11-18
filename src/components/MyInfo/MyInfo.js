@@ -18,13 +18,16 @@ const MyInfo = props => {
   console.log(data.profile.childImageSharp.fluid)
   return (
     <div className={classes.Container}>
-      <div>
+      <div className={classes.InfoContainer}>
         <p>
           Hi. My Name is Tangir, Junior full stack web developer graduated in
-          Computer Science with first class. I love software development
-          and I focus on web technologies such as HTML5, CSS, JavaScript,
-          jQuery, Node.js, React.js
+          Computer Science with first class. I love software development and I
+          focus on web technologies such as HTML5, CSS, JavaScript, jQuery,
+          Node.js, React.js
         </p>
+        <a href="CV_Tangir_Miah.pdf" download>
+          Resume
+        </a>
       </div>
       <Img className={classes.Img} fluid={data.profile.childImageSharp.fluid} />
     </div>

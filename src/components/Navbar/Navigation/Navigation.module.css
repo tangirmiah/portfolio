@@ -21,7 +21,6 @@
   left: 0;
   background-color: #f8f8f8;
   visibility: hidden;
-
   transition: all 0.3s ease-in-out 0s;
 }
 .Navigation a:hover::before {
