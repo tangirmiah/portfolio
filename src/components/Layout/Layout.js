@@ -1,7 +1,6 @@
 import React from "react"
 import Navbar from "../Navbar/Navbar"
 import classes from "./Layout.module.css"
-import ParticlesBg from "particles-bg"
 
 const Layout = ({ children }) => {
   if (typeof window !== "undefined") {

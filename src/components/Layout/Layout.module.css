@@ -1,10 +1,18 @@
 .Layout {
   width: 100%;
-
 }
 
-.Main {
+/* .Main {
   display: flex;
   flex-flow: column;
   justify-content: center;
+} */
+@media (min-width: 1201px) {
+  .Main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1200px;
+  }
 }

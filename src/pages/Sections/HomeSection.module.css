@@ -3,14 +3,15 @@
   width: 100%;
   background-color: rgb(3, 62, 107);
   z-index: 0;
+  padding-left: 6vw;
 }
 
 .ParticleBg {
   height: 100vh;
   background-image: linear-gradient(
     to bottom,
-    rgba(3, 62, 107, 0),
-    rgba(3, 62, 107, 1) 90%
+    rgba(3, 62, 107, 1) 0%,
+    rgba(3, 62, 107, 0) 50%,
+    rgba(3, 62, 107, 1) 100%
   );
 }
-

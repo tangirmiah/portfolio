@@ -2,7 +2,6 @@ import React from "react"
 import classes from "./HomeSection.module.css"
 import Hero from "../../components/Hero/Hero"
 import ParticlesBg from "particles-bg"
-import { Link } from "gatsby"
 
 const HomeSection = () => {
   return (

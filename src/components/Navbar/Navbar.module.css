@@ -1,5 +1,5 @@
 .Nav {
-  /* background-color: #033e6b; */
+  background-color: #033e6b;
   position: fixed;
   width: 100%;
   height: 10vh;
@@ -10,5 +10,4 @@
   justify-content: space-between;
   color: #f8f8f8;
   z-index: 1;
-
 }
