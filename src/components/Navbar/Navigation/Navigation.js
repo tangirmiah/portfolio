@@ -7,7 +7,7 @@ const Navigation = props => {
     <div className={classes.Navigation}>
       <Link to="/#HomeSection">Home</Link>
       <Link to="/#AboutSection"> About </Link>
-      <Link to="/"> Project </Link>
+      <Link to="/#ProjectsSection"> Project </Link>
       <Link to="/"> Contact </Link>
     </div>
   )

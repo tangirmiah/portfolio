@@ -1,6 +1,5 @@
 import React from "react"
 import classes from "./AboutSection.module.css"
-import { Link } from "gatsby"
 import MyInfo from "../../components/MyInfo/MyInfo"
 
 const AboutSection = () => {

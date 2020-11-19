@@ -1,0 +1,8 @@
+.Project {
+  border: red solid 1px;
+  height: 50vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

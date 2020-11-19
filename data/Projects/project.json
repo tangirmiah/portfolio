@@ -1,0 +1,23 @@
+[
+    {
+        "title" : "project 1",
+        "slug": "project-1",
+        "url" : "example.com",
+        "image": "./project1.jpg"   ,
+        "description" : "this ia project made with gatsby"    
+    },
+    {
+        "title" : "project 2",
+        "slug": "project-2",
+        "url" : "example.com",
+        "image": "./project2.jpg"   ,
+        "description" : "this ia project made with gatsby"    
+    },
+    {
+        "title" : "project 3",
+        "slug": "project-3",
+        "url" : "example.com",
+        "image": "./project3.jpg"   ,
+        "description" : "this ia project made with gatsby"    
+    }
+]

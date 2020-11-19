@@ -2,7 +2,7 @@ import React from "react"
 import classes from "./MyInfo.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-
+import { IoMdCloudDownload } from "react-icons/io"
 const MyInfo = props => {
   const data = useStaticQuery(graphql`
     query {
@@ -26,6 +26,7 @@ const MyInfo = props => {
           Node.js, React.js
         </p>
         <a href="CV_Tangir_Miah.pdf" download>
+          <IoMdCloudDownload />
           Resume
         </a>
       </div>
