@@ -1,10 +1,20 @@
 import React from "react"
 import classes from "./Project.module.css"
-
-const Project = props => {
+import BackgroundImage from "gatsby-background-image"
+const Project = ({ title, description, imgDescription }) => {
   return (
     <div className={classes.Project}>
-      <h1>Hello</h1>
+      <BackgroundImage
+        Tag="section"
+        className={classes.Img}
+        fluid={imgDescription}
+        backgroundColor={`#040e18`}
+      >
+        <div className={classes.ProjectInfo}>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+      </BackgroundImage>
     </div>
   )
 }

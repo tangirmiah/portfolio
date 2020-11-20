@@ -39,7 +39,6 @@
 }
 .InfoContainer a:hover {
   color: #f8f8f8;
-  border: #033e6b solid 2px;
   background-color: #033e6b;
   transition: 0.2s ease-in-out;
 }

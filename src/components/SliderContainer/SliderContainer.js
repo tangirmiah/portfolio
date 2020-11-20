@@ -1,53 +1,52 @@
 import React from "react"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import Carousel from "react-elastic-carousel"
 import classes from "./SliderContainer.module.css"
 import Project from "../Project/Project"
-
+import "./sliderStyle.css"
+import { graphql, useStaticQuery } from "gatsby"
 const SliderContainer = props => {
-  const slides = []
-  for (let i = 0; i < 5; i++) {
-    slides.push(<Project />)
-  }
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-  }
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 800, itemsToShow: 3 },
+  ]
+  const data = useStaticQuery(graphql`
+    query {
+      projects: allProjectJson {
+        edges {
+          node {
+            id
+            slug
+            title
+            url
+            description
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const slides = data.projects.edges.map((project, index) => (
+    <Project
+      title={project.node.title}
+      description={project.node.description}
+      imgDescription={project.node.image.childImageSharp.fluid}
+    />
+  ))
+
+  console.log({ data })
   return (
     <div className={classes.SliderContainer}>
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>7</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
-        <div>
-          <h3>9</h3>
-        </div>
-      </Slider>
+      <Carousel itemsToShow={3} breakPoints={breakPoints}>
+        {slides}
+      </Carousel>
     </div>
   )
 }
