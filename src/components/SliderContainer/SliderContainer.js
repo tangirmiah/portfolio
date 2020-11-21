@@ -20,6 +20,8 @@ const SliderContainer = props => {
             title
             url
             description
+            github
+            live
             image {
               childImageSharp {
                 fluid(maxWidth: 2000) {
@@ -35,9 +37,12 @@ const SliderContainer = props => {
 
   const slides = data.projects.edges.map((project, index) => (
     <Project
+      key={project.node.title}
       title={project.node.title}
       description={project.node.description}
       imgDescription={project.node.image.childImageSharp.fluid}
+      gitHub={project.node.github}
+      live={project.node.live}
     />
   ))
 
