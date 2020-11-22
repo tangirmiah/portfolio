@@ -49,6 +49,7 @@ const SliderContainer = props => {
   console.log({ data })
   return (
     <div className={classes.SliderContainer}>
+      <h1 className={classes.Title}>Projects:</h1>
       <Carousel itemsToShow={3} breakPoints={breakPoints}>
         {slides}
       </Carousel>

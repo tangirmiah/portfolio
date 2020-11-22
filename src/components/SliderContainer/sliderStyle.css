@@ -1,3 +1,7 @@
+.rec.rec-carousel-wrapper {
+  padding-top: 2vh;
+  border: #033e6b3f solid 1px;
+}
 .rec.rec-arrow {
   border-radius: 50%;
   color: #033e6b;
