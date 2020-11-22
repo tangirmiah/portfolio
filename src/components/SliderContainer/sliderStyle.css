@@ -1,14 +1,15 @@
 .rec.rec-carousel-wrapper {
   padding-top: 2vh;
-  border: #033e6b3f solid 1px;
+  /* border: #033e6b3f solid 1px; */
 }
 .rec.rec-arrow {
   border-radius: 50%;
+
   color: #033e6b;
   background-color: inherit;
   /* font-size: 2.5rem; */
   /* font-weight: 500; */
-  box-shadow: 0 0 10px;
+  /* box-shadow: 0 0 10px; */
 }
 .rec.rec-arrow:hover:enabled {
   border-radius: 50%;

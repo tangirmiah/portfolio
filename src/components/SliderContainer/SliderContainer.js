@@ -6,9 +6,9 @@ import "./sliderStyle.css"
 import { graphql, useStaticQuery } from "gatsby"
 const SliderContainer = props => {
   const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2 },
-    { width: 800, itemsToShow: 3 },
+    { width: 1, itemsToShow: 1, itemsToScroll: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 1 },
+    { width: 800, itemsToShow: 3, itemsToScroll: 3 },
   ]
   const data = useStaticQuery(graphql`
     query {
@@ -46,10 +46,9 @@ const SliderContainer = props => {
     />
   ))
 
-  console.log({ data })
   return (
     <div className={classes.SliderContainer}>
-      <h1 className={classes.Title}>Projects:</h1>
+      <h1 className={classes.Title}>My Projects</h1>
       <Carousel itemsToShow={3} breakPoints={breakPoints}>
         {slides}
       </Carousel>

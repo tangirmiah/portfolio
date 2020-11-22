@@ -4,6 +4,7 @@ import Layout from "../components/Layout/Layout"
 import HomeSection from "./Sections/HomeSection"
 import AboutSection from "./Sections/AboutSection"
 import ProjectsSection from "./Sections/ProjectsSection"
+import ContactSection from "./Sections/ContactSection"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <HomeSection />
         <AboutSection />
         <ProjectsSection />
+        <ContactSection />
       </Layout>
     </>
   )

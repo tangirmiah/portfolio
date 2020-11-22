@@ -19,15 +19,15 @@ const MyInfo = props => {
   return (
     <div className={classes.Container}>
       <div className={classes.InfoContainer}>
-        <p>
+        <p className={classes.AboutText}>
           Hi. My Name is Tangir, Junior full stack web developer graduated in
           Computer Science with first class. I love software development and I
           focus on web technologies such as HTML5, CSS, JavaScript, jQuery,
           Node.js, React.js
         </p>
         <a href="CV_Tangir_Miah.pdf" download>
+          <p>Resume&nbsp;</p>
           <IoMdCloudDownload />
-          Resume
         </a>
       </div>
       <Img className={classes.Img} fluid={data.profile.childImageSharp.fluid} />

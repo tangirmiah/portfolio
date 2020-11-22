@@ -2,6 +2,13 @@ import React from "react"
 import classes from "./Project.module.css"
 import BackgroundImage from "gatsby-background-image"
 import { DiGithub, DiChrome } from "react-icons/di"
+import { AiOutlineGithub } from "react-icons/ai"
+import {
+  VscGithubAlt,
+  VscLink,
+  VscLinkExternal,
+  VscGithub,
+} from "react-icons/vsc"
 const Project = ({ title, description, imgDescription, gitHub, live }) => {
   return (
     <div className={classes.Project}>
@@ -19,10 +26,10 @@ const Project = ({ title, description, imgDescription, gitHub, live }) => {
           </div>
           <div className={classes.External}>
             <a href={gitHub} target="_blank" title="Go to GitHub repo">
-              <DiGithub />
+              <VscGithubAlt />
             </a>
             <a href={live} target="_blank" title="Go to live page">
-              <DiChrome />
+              <VscLinkExternal />
             </a>
           </div>
         </div>

@@ -3,7 +3,6 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: flex-start;
   width: 70vw;
@@ -12,9 +11,10 @@
 .Title {
   color: #22557c;
   font-size: 3em;
-  padding: 1vh 0 1vh 3vw;
+  /* padding: 1vh 0 1vh 3vw; */
+  /* padding-left: 4.2vw; */
   margin-bottom: 3vh;
   width: 100%;
-  background-color: #033e6b15;
+  /* background-color: #033e6b15; */
   vertical-align: center;
 }

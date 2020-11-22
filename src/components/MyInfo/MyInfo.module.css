@@ -17,7 +17,7 @@
   align-items: flex-start;
   justify-content: space-evenly;
 }
-.InfoContainer p {
+.AboutText {
   color: #033e6b;
   font-size: 1.3em;
   margin-top: -5vh;
@@ -29,13 +29,16 @@
   text-decoration: none;
   padding: 2px 8px;
   color: #033e6b;
-  font-size: 1.8em;
+  font-size: 1.5em;
   border: #033e6b solid 2px;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.InfoContainer a svg {
+  font-size: 1.5em;
 }
 .InfoContainer a:hover {
   color: #f8f8f8;

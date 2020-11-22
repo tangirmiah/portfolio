@@ -43,12 +43,13 @@
   transform: translatey(0);
 }
 .Internal {
-  height: 100vh;
+  height: 80vh;
   overflow-y: scroll;
 }
 
 .External {
-  font-size: 2.9em;
+  padding-top: 1em;
+  font-size: 2.3em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -56,9 +57,10 @@
 .External a {
   color: #f8f8f8;
   text-decoration: none;
+  /* font-size: 2.9em; */
 }
 
 .External a:hover {
-  color: #e7e7e7;
+  color: #dadada;
   text-decoration: none;
 }
