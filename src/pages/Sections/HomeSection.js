@@ -7,11 +7,27 @@ import Particles from "react-particles-js"
 const HomeSection = () => {
   return (
     <div className={classes.Home} id="HomeSection">
-      <div className={classes.ParticleBg}>
-        <Hero />
-        {/* <ParticlesBg color={"#f8f8f8"} num={100} type="cobweb" bg={true} /> */}
-        {/* <Particles /> */}
-      </div>
+      <Hero />
+      <Particles
+        className={classes.ParticleBg}
+        params={{
+          particles: {
+            number: {
+              value: 300,
+            },
+            color: {
+              value: "#fff",
+            },
+            opacity: {
+              value: 0.1,
+              anim: {
+                enable: true,
+              },
+            },
+          },
+        }}
+      />
+      {/* <ParticlesBg color={"#f8f8f8"} num={100} type="cobweb" bg={true} /> */}
     </div>
   )
 }
