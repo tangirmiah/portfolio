@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "../Navbar/Navbar"
 import classes from "./Layout.module.css"
+import Footer from "../Footer/Footer"
 
 const Layout = ({ children }) => {
   if (typeof window !== "undefined") {
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
     <div className={classes.Layout}>
       <Navbar />
       <main className={classes.Main}>{children}</main>
+      <Footer />
     </div>
   )
 }
