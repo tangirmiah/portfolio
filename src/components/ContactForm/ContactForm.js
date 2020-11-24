@@ -1,14 +1,7 @@
 import React from "react"
 import classes from "./ContactForm.module.css"
-
+import { RiMailSendLine } from "react-icons/ri"
 const ContactForm = props => {
-  const formStyle = {
-    textAlign: "left",
-  }
-  const buttonsStyle = {
-    margin: "1rem",
-    textAlign: "center",
-  }
   return (
     <>
       <div className={classes.ContactFormContainer}>
@@ -38,15 +31,16 @@ const ContactForm = props => {
             <label>Message</label>
             <textarea
               name="message"
-              rows="5"
+              rows="8"
               placeholder="Write your message..."
               className={classes.FormInput}
               required
             ></textarea>
           </div>
 
-          <button type="submit" className="button special">
-            Send
+          <button type="submit" className={classes.SubmitButton}>
+            Send &nbsp;
+            <RiMailSendLine />
           </button>
         </form>
       </div>

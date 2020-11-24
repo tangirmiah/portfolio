@@ -38,11 +38,13 @@
   align-items: flex-start;
 }
 .FormInput {
+  border-radius: 5px;
   font-size: 1.1em;
   font-weight: 500;
   width: 100%;
   color: #22557c;
   border: #9696968a solid 1px;
+  resize: none;
 }
 .FormInput:focus {
   outline: none !important;
@@ -53,4 +55,26 @@
 .FormTitle {
   color: #22557c;
   font-size: 3em;
+}
+
+.SubmitButton {
+  color: #22557c;
+  background-color: white;
+  border: #9696968a solid 1px;
+  padding: 1vh;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+}
+.SubmitButton:hover {
+  cursor: pointer;
+  background-color: #22557c;
+  color: #f8f8f8;
+  transition: 0.2s ease-in-out;
+}
+.SubmitButton svg {
+  font-size: 1.1em;
 }
