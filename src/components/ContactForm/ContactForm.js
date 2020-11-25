@@ -2,14 +2,12 @@ import React from "react"
 import classes from "./ContactForm.module.css"
 import { RiMailSendLine } from "react-icons/ri"
 const ContactForm = props => {
-  const handleSubmit = e => {
-    e.preventDefault()
-  }
   return (
     <>
       <div className={classes.ContactFormContainer}>
         <h1 className={classes.FormTitle}>Contact me</h1>
         <form
+          action="/"
           name="contact form"
           method="POST"
           data-netlify="true"
