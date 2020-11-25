@@ -23,7 +23,6 @@ module.exports = {
         path: `${__dirname}/data/Projects/`,
       },
     },
-    `gatsby-transformer-json`,
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-transformer-remark`,

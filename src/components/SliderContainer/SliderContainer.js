@@ -12,20 +12,19 @@ const SliderContainer = props => {
   ]
   const data = useStaticQuery(graphql`
     query {
-      projects: allProjectJson {
+      projects: allMarkdownRemark {
         edges {
           node {
-            id
-            slug
-            title
-            url
-            description
-            github
-            live
-            image {
-              childImageSharp {
-                fluid(maxWidth: 2000) {
-                  ...GatsbyImageSharpFluid
+            frontmatter {
+              title
+              live
+              github
+              description
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2000) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }
@@ -35,14 +34,22 @@ const SliderContainer = props => {
     }
   `)
 
+  let projectArray = Object.keys(data.projects).map(key => [data.projects[key]])
+  console.log(data.projects)
   const slides = data.projects.edges.map((project, index) => (
     <Project
-      key={project.node.title}
-      title={project.node.title}
-      description={project.node.description}
-      imgDescription={project.node.image.childImageSharp.fluid}
-      gitHub={project.node.github}
-      live={project.node.live}
+      // key={project.node.title}
+      // title={project.node.title}
+      // description={project.node.description}
+      // imgDescription={project.node.image.childImageSharp.fluid}
+      // gitHub={project.node.github}
+      // live={project.node.live}
+      key={project.node.frontmatter.title}
+      title={project.node.frontmatter.title}
+      description={project.node.frontmatter.description}
+      imgDescription={project.node.frontmatter.image.childImageSharp.fluid}
+      gitHub={project.node.frontmatter.github}
+      live={project.node.frontmatter.live}
     />
   ))
 
@@ -57,3 +64,24 @@ const SliderContainer = props => {
 }
 
 export default SliderContainer
+
+// allProjectJson {
+//         edges {
+//           node {
+//             id
+//             slug
+//             title
+//             url
+//             description
+//             github
+//             live
+//             image {
+//               childImageSharp {
+//                 fluid(maxWidth: 2000) {
+//                   ...GatsbyImageSharpFluid
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
