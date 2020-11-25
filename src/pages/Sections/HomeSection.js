@@ -10,18 +10,22 @@ const HomeSection = () => {
       <Hero />
       <Particles
         className={classes.ParticleBg}
+        // style={{
+        //   opacity: "50%",
+        // }}
         params={{
           particles: {
             number: {
-              value: 300,
+              value: 200,
             },
             color: {
-              value: "#fff",
+              value: "#f8f8f8",
             },
-            opacity: {
-              value: 0.1,
-              anim: {
+            interactivity: {
+              detectsOn: "parent",
+              onHover: {
                 enable: true,
+                mode: "repulse",
               },
             },
           },
