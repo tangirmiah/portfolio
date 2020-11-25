@@ -11,10 +11,10 @@ const ContactForm = props => {
         <h1 className={classes.FormTitle}>Contact me</h1>
         <form
           name="contact form"
+          method="POST"
           data-netlify="true"
           className={classes.Form}
-          onSubmit={handleSubmit}
-          method="post"
+          onSubmit="submit"
         >
           <input type="hidden" name="form-name" value="contact form" />
 
