@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+
+  # when using the default proxy server port
+  local_backend: true
+
+media_folder: data/Projects
+public_folder: public/Projects
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "data/Projects"
+    create: true
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "GitHub", name: "github", widget: "string" }
+      - { label: "URL", name: "live", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
