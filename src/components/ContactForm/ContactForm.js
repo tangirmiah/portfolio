@@ -1,18 +1,83 @@
-import React from "react"
+import React, { useState } from "react"
 import classes from "./ContactForm.module.css"
 import { RiMailSendLine } from "react-icons/ri"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
+
 const ContactForm = props => {
+  const [formState, setFormState] = useState({
+    fullname: "",
+    email: "",
+    message: "",
+  })
+
+  const handleChange = e => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    })
+  }
+  function encode(data) {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault()
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": event.target.getAttribute("contact form"),
+        ...formState,
+      }),
+    })
+      .then(() =>
+        toast.success("Your message was delivered!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+        })
+      )
+      .catch(error =>
+        toast.success("There was an error with your message", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+        })
+      )
+  }
+
   return (
     <>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className={classes.ContactFormContainer}>
         <h1 className={classes.FormTitle}>Contact me</h1>
         <form
-          action="/"
           name="contact form"
           method="POST"
           data-netlify="true"
           className={classes.Form}
-          onSubmit="submit"
+          onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact form" />
 
@@ -23,6 +88,8 @@ const ContactForm = props => {
               name="fullname"
               className={classes.FormInput}
               placeholder="Write your name..."
+              value={formState.name}
+              onChange={handleChange}
               required
             />
           </div>
@@ -33,6 +100,8 @@ const ContactForm = props => {
               name="email"
               placeholder="Write your email..."
               className={classes.FormInput}
+              value={formState.email}
+              onChange={handleChange}
               required
             />
           </div>
@@ -43,6 +112,8 @@ const ContactForm = props => {
               rows="8"
               placeholder="Write your message..."
               className={classes.FormInput}
+              value={formState.message}
+              onChange={handleChange}
               required
             ></textarea>
           </div>
