@@ -82,40 +82,50 @@ const ContactForm = props => {
           <input type="hidden" name="form-name" value="contact form" />
 
           <div className={classes.InputContainer}>
-            <label>Name</label>
-            <input
-              type="text"
-              name="fullname"
-              className={classes.FormInput}
-              placeholder="Write your name..."
-              value={formState.name}
-              onChange={handleChange}
-              required
-            />
+            <label htmlFor="fullname">
+              Name
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                className={classes.FormInput}
+                placeholder="Write your name..."
+                value={formState.name}
+                onChange={handleChange}
+                required
+              />
+            </label>
           </div>
           <div className={classes.InputContainer}>
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Write your email..."
-              className={classes.FormInput}
-              value={formState.email}
-              onChange={handleChange}
-              required
-            />
+            <label htmlFor="email">
+              Email
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Write your email..."
+                className={classes.FormInput}
+                value={formState.email}
+                onChange={handleChange}
+                required
+              />
+            </label>
           </div>
+
           <div className={classes.InputContainer}>
-            <label>Message</label>
-            <textarea
-              name="message"
-              rows="8"
-              placeholder="Write your message..."
-              className={classes.FormInput}
-              value={formState.message}
-              onChange={handleChange}
-              required
-            ></textarea>
+            <label htmlFor="message">
+              Message
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                placeholder="Write your message..."
+                className={classes.FormInput}
+                value={formState.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+            </label>
           </div>
 
           <button type="submit" className={classes.SubmitButton}>
