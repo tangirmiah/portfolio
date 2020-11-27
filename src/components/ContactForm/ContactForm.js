@@ -24,12 +24,11 @@ const ContactForm = props => {
   }
 
   const handleSubmit = event => {
-    event.preventDefault()
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": event.target.getAttribute("contact form"),
+        "form-name": event.target.getAttribute("name"),
         ...formState,
       }),
     })
@@ -55,6 +54,7 @@ const ContactForm = props => {
           progress: undefined,
         })
       )
+    event.preventDefault()
   }
 
   return (
