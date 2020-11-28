@@ -1,80 +1,171 @@
-.ContactFormContainer {
-  background-color: #f8f8f8;
-  z-index: 100;
-  width: 50vw;
-  height: 60vh;
-  /* border-radius: 30px; */
-  padding: 0 3em;
-  /* box-shadow: 0px 0px 10px #969696; */
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: flex-start;
-  padding: 8vh;
+@media screen and (min-width: 1201px) {
+  .ContactFormContainer {
+    background-color: #f8f8f8;
+    z-index: 100;
+    width: 50vw;
+    height: 60vh;
+    /* border-radius: 30px; */
+    padding: 0 3em;
+    /* box-shadow: 0px 0px 10px #969696; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+  }
+
+  .InputContainer {
+    width: 90%;
+  }
+  .InputContainer input {
+    height: 3em;
+    padding: 1em;
+    margin-bottom: 2vh;
+  }
+
+  .InputContainer textarea {
+    padding: 1em;
+    margin-bottom: 2vh;
+  }
+  .InputContainer label {
+    color: #22557c;
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+  .Form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .FormInput {
+    border-radius: 5px;
+    font-size: 0.6em;
+    font-weight: 500;
+    width: 100%;
+    color: #22557c;
+    border: #9696968a solid 1px;
+    resize: none;
+  }
+  .FormInput:focus {
+    outline: none !important;
+
+    border: #22557c solid 2px;
+  }
+
+  .FormTitle {
+    color: #22557c;
+    font-size: 3em;
+  }
+
+  .SubmitButton {
+    color: #22557c;
+    background-color: white;
+    border: #9696968a solid 1px;
+    padding: 1vh;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+  .SubmitButton:hover {
+    cursor: pointer;
+    background-color: #22557c;
+    color: #f8f8f8;
+    transition: 0.2s ease-in-out;
+  }
+  .SubmitButton svg {
+    font-size: 1.1em;
+  }
 }
 
-.InputContainer {
-  width: 90%;
-}
-.InputContainer input {
-  height: 3em;
-  padding: 1em;
-}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .ContactFormContainer {
+    background-color: #f8f8f8;
+    z-index: 100;
+    width: 90vw;
+    height: 80vh;
+    /* border-radius: 30px; */
+    /* padding: 0 3em; */
+    box-shadow: 0px 0px 10px #969696;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 8vh;
+  }
 
-.InputContainer textarea {
-  padding: 1em;
-}
-.InputContainer label {
-  color: #22557c;
-  font-size: 1.6em;
-  font-weight: 600;
-}
-.Form {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.FormInput {
-  border-radius: 5px;
-  font-size: 0.6em;
-  font-weight: 500;
-  width: 100%;
-  color: #22557c;
-  border: #9696968a solid 1px;
-  resize: none;
-}
-.FormInput:focus {
-  outline: none !important;
+  .InputContainer {
+    width: 100%;
+  }
+  .InputContainer input {
+    height: 4em;
+    padding: 1em;
+    margin-bottom: 3vh;
+  }
 
-  border: #22557c solid 2px;
-}
+  .InputContainer textarea {
+    height: 10vh;
+    padding: 1em;
+    margin-bottom: 3vh;
+  }
+  .InputContainer label {
+    color: #22557c;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  .Form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .FormInput {
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 500;
+    width: 100%;
+    color: #22557c;
+    border: #9696968a solid 1px;
+    resize: none;
+  }
+  .FormInput:focus {
+    outline: none !important;
 
-.FormTitle {
-  color: #22557c;
-  font-size: 3em;
-}
+    border: #22557c solid 2px;
+  }
 
-.SubmitButton {
-  color: #22557c;
-  background-color: white;
-  border: #9696968a solid 1px;
-  padding: 1vh;
-  font-size: 1.6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s ease-in-out;
-  border-radius: 5px;
-}
-.SubmitButton:hover {
-  cursor: pointer;
-  background-color: #22557c;
-  color: #f8f8f8;
-  transition: 0.2s ease-in-out;
-}
-.SubmitButton svg {
-  font-size: 1.1em;
+  .FormTitle {
+    color: #22557c;
+    font-size: 4em;
+  }
+
+  .SubmitButton {
+    width: 100%;
+    color: #22557c;
+    background-color: white;
+    border: #9696968a solid 1px;
+    padding: 1vh;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+  .SubmitButton:hover {
+    cursor: pointer;
+    background-color: #22557c;
+    color: #f8f8f8;
+    transition: 0.2s ease-in-out;
+  }
+  .SubmitButton svg {
+    font-size: 1.4em;
+  }
 }

@@ -1,66 +1,147 @@
-.Project {
-  height: 50vh;
-  width: 85%;
-  border-radius: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow-wrap: break-word;
-}
-.Project h1 {
-  font-weight: normal;
-  overflow-wrap: break-word;
-  text-transform: capitalize;
-}
-.Project h5 {
-  font-weight: lighter;
+@media screen and (min-width: 1201px) {
+  .Project {
+    height: 50vh;
+    width: 85%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+  }
+  .Project h1 {
+    font-weight: normal;
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+  }
+  .Project h5 {
+    font-weight: lighter;
+  }
+
+  .Img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .ProjectInfo {
+    color: #f8f8f8;
+    padding: 30px;
+    position: relative;
+    height: 100%;
+    transform: translatey(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .Img:hover {
+    width: 110%;
+    height: 110%;
+    transition: 0.2s ease-in-out;
+  }
+  .Project:hover .ProjectInfo {
+    transition: transform 0.5s;
+    background-color: rgba(3, 62, 107, 0.89);
+    transform: translatey(0);
+  }
+  .Internal {
+    height: 80vh;
+    overflow-y: scroll;
+  }
+
+  .External {
+    padding-top: 1em;
+    font-size: 2.3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .External a {
+    color: #f8f8f8;
+    text-decoration: none;
+    /* font-size: 2.9em; */
+  }
+
+  .External a:hover {
+    color: #dadada;
+    text-decoration: none;
+  }
 }
 
-.Img {
-  width: 100%;
-  height: 90%;
-}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .Project {
+    height: 50vh;
+    width: 85%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+  }
+  .Project h1 {
+    font-weight: normal;
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+  }
+  .Project h5 {
+    font-weight: lighter;
+  }
 
-.ProjectInfo {
-  color: #f8f8f8;
-  padding: 30px;
-  position: relative;
-  height: 100%;
-  transform: translatey(100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.Img:hover {
-  width: 110%;
-  height: 110%;
-  transition: 0.2s ease-in-out;
-}
-.Project:hover .ProjectInfo {
-  transition: transform 0.5s;
-  background-color: rgba(3, 62, 107, 0.89);
-  transform: translatey(0);
-}
-.Internal {
-  height: 80vh;
-  overflow-y: scroll;
-}
+  .Img {
+    width: 100%;
+    height: 90%;
+  }
 
-.External {
-  padding-top: 1em;
-  font-size: 2.3em;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.External a {
-  color: #f8f8f8;
-  text-decoration: none;
-  /* font-size: 2.9em; */
-}
+  .ProjectInfo {
+    color: #f8f8f8;
+    padding: 30px;
+    position: relative;
+    height: 100%;
+    transform: translatey(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.4s ease-in-out;
+  }
+  .Img:hover {
+    width: 110%;
+    height: 110%;
+    transition: 0.2s ease-in-out;
+  }
+  .Project:hover .ProjectInfo {
+    transition: transform 0.5s;
+    background-color: rgba(3, 62, 107, 0.89);
+    transform: translatey(0);
+  }
+  .Internal {
+    height: 80vh;
+    overflow-y: scroll;
+  }
+  .Internal h1 {
+    font-size: 3.2em;
+  }
+  .Internal h5 {
+    font-size: 1.5em;
+  }
+  .Internal p {
+    font-size: 2em;
+  }
 
-.External a:hover {
-  color: #dadada;
-  text-decoration: none;
+  .External {
+    padding-top: 1em;
+    font-size: 2.6em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .External a {
+    color: #f8f8f8;
+    text-decoration: none;
+    /* font-size: 2.9em; */
+  }
+
+  .External a:hover {
+    color: #dadada;
+    text-decoration: none;
+  }
 }

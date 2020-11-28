@@ -9,7 +9,7 @@ const MyInfo = props => {
     query {
       profile: file(relativePath: { eq: "profile.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
+          fluid(maxWidth: 2000, maxHeight: 2000) {
             ...GatsbyImageSharpFluid
           }
         }

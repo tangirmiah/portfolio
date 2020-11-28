@@ -1,55 +1,3 @@
-.HeroContainer {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-
-  /* padding: 30vh 2em 0; */
-  overflow-x: hidden;
-}
-.Writing {
-  padding-top: 10vh;
-  padding-left: 4vw;
-}
-.HeroContainer a {
-  position: relative;
-  color: #f8f8f8;
-  cursor: pointer;
-}
-.HeroTitle {
-  color: #f8f8f8;
-  font-size: 7em;
-}
-.HeroTitle span {
-  /* color: #ffe600; */
-  /* font-size: 0.3em; */
-}
-
-.HeroPara {
-  font-weight: lighter;
-  color: #f8f8f8;
-  font-size: 3em;
-}
-
-.HeroPara span {
-  font-weight: 700;
-}
-
-.Arrow {
-  /* z-index: 1; */
-  align-self: center;
-  color: white;
-  font-size: 2em;
-  margin-top: 30vh;
-  animation: arrowMove 2s infinite ease-in-out;
-}
-
 @keyframes arrowMove {
   0% {
     top: 0px;
@@ -59,5 +7,102 @@
   }
   100% {
     top: 0px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1824px) {
+  .HeroContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    /* padding: 30vh 2em 0; */
+    overflow-x: hidden;
+  }
+  .Writing {
+    padding-top: 10vh;
+    padding-left: 4vw;
+  }
+  .HeroContainer a {
+    position: relative;
+    color: #f8f8f8;
+    cursor: pointer;
+  }
+  .HeroTitle {
+    color: #f8f8f8;
+    font-size: 7em;
+  }
+
+  .HeroPara {
+    font-weight: lighter;
+    color: #f8f8f8;
+    font-size: 3em;
+  }
+
+  .HeroPara span {
+    font-weight: 700;
+  }
+  .Arrow {
+    align-self: center;
+    color: white;
+    font-size: 2em;
+    margin-top: 30vh;
+    animation: arrowMove 2s infinite ease-in-out;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .HeroContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    /* padding: 30vh 2em 0; */
+    overflow-x: hidden;
+  }
+  .Writing {
+    padding-top: 10vh;
+    padding-left: 4vw;
+  }
+  .HeroContainer a {
+    position: relative;
+    color: #f8f8f8;
+    cursor: pointer;
+  }
+  .HeroTitle {
+    margin-top: 5vh;
+    color: #f8f8f8;
+    font-size: 7em;
+  }
+
+  .HeroPara {
+    font-weight: lighter;
+    color: #f8f8f8;
+    font-size: 3em;
+  }
+
+  .HeroPara span {
+    font-weight: 700;
+  }
+
+  .Arrow {
+    align-self: center;
+    color: white;
+    font-size: 2em;
+    margin-top: 30vh;
+    animation: arrowMove 2s infinite ease-in-out;
   }
 }

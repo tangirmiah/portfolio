@@ -7,7 +7,7 @@ import { graphql, useStaticQuery } from "gatsby"
 const SliderContainer = props => {
   const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 1 },
+    { width: 550, itemsToShow: 1, itemsToScroll: 1 },
     { width: 800, itemsToShow: 3, itemsToScroll: 3 },
   ]
   const data = useStaticQuery(graphql`
@@ -36,7 +36,6 @@ const SliderContainer = props => {
 
   const slides = data.projects.edges.map((project, index) => (
     <Project
-
       key={project.node.frontmatter.title}
       title={project.node.frontmatter.title}
       description={project.node.frontmatter.description}
@@ -57,4 +56,3 @@ const SliderContainer = props => {
 }
 
 export default SliderContainer
-
