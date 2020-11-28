@@ -1,15 +1,35 @@
-.NavIcons {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 5vw;
-}
+@media screen and (min-width: 1201px) {
+  .NavIcons {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5vw;
+  }
 
-.IconColor {
-  margin-left: 1vw;
-  font-size: 2em;
-  color: #f8f8f8;
-}
+  .IconColor {
+    margin-left: 1vw;
+    font-size: 2em;
+    color: #f8f8f8;
+  }
 
-.IconColor:hover {
-  color: rgb(100, 166, 216);
+  .IconColor:hover {
+    color: rgb(100, 166, 216);
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .NavIcons {
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .IconColor {
+    font-size: 5em;
+    color: #f8f8f8;
+  }
+
+  .IconColor:hover {
+    color: rgb(100, 166, 216);
+  }
 }

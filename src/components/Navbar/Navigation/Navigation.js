@@ -4,7 +4,7 @@ import classes from "./Navigation.module.css"
 
 const Navigation = props => {
   return (
-    <div className={classes.Navigation}>
+    <div className={classes.Navigation} onClick={props.handleMenu}>
       <Link to="/#HomeSection">Home</Link>
       <Link to="/#AboutSection"> About </Link>
       <Link to="/#ProjectsSection"> Projects </Link>

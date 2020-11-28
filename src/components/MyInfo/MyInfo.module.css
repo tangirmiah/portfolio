@@ -77,11 +77,9 @@
   .AboutText {
     color: #033e6b;
     font-size: 1.5em;
-    /* margin-top: -5vh; */
   }
 
   .InfoContainer a {
-    /* margin-top: -10vh; */
     transition: 0.2s ease-in-out;
     text-decoration: none;
     padding: 2px 8px;
@@ -105,8 +103,7 @@
   .Img {
     width: 30vw;
     height: 50vh;
-    /* margin-left: 2em; */
-    border-radius: 50%;
+    border-radius: 10px;
 
     padding: 3em;
   }
@@ -116,9 +113,4 @@
     padding: 5em !important;
     transform: translateY(100vh) !important;
   }
-  /* .Img img {
-    object-fit: none !important;
-    max-width: 50% !important;
-    height: 100% !important;
-  } */
 }

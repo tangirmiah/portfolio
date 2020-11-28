@@ -10,12 +10,74 @@
     align-items: center;
     justify-content: space-between;
     color: #f8f8f8;
-    z-index: 2;
+    z-index: 200;
+  }
+  .NavMobile {
+    display: none;
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
-  .Nav {
+  .NavLarge {
     display: none;
+  }
+  .MenuBtn {
+    background-color: #033e6be8;
+    width: 100vw;
+    height: 10vh;
+    color: #f8f8f8;
+    position: fixed;
+    font-size: 3em;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5vw;
+  }
+
+  .MenuBtnClose {
+    width: 100vw;
+    height: 10vh;
+    color: #f8f8f8;
+    position: fixed;
+    font-size: 4em;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5vw;
+  }
+
+  .Nav {
+    transition: 0.5s ease-in-out;
+    background-color: #033e6be8;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8;
+    z-index: 200;
+    transform: translatex(0);
+  }
+  .HideNav {
+    transition: 0.5s ease-in-out;
+    background-color: #033e6be8;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8;
+    z-index: 200;
+    transform: translatex(-100%);
   }
 }

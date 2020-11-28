@@ -1,29 +1,55 @@
-.Navigation {
-  /* align-self: flex-start; */
-  margin-left: 5vw;
-  display: flex;
-  justify-content: space-between;
-  /* width: 20%; */
-}
-.Navigation a {
-  color: #f8f8f8;
-  text-decoration: none;
-  position: relative;
-  margin-right: 20px;
+@media screen and (min-width: 1201px) {
+  .Navigation {
+    /* align-self: flex-start; */
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-between;
+    /* width: 20%; */
+  }
+  .Navigation a {
+    color: #f8f8f8;
+    text-decoration: none;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .Navigation a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .Navigation a:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
 }
 
-.Navigation a::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #f8f8f8;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out 0s;
-}
-.Navigation a:hover::before {
-  visibility: visible;
-  width: 100%;
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .Navigation {
+    width: 100vw;
+    height: 80vh;
+    /* align-self: flex-start; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Navigation a {
+    width: 100vw;
+    padding: 4vh;
+    font-size: 4em;
+    color: #f8f8f8;
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom: #f8f8f8 solid 1px;
+  }
+  .Navigation a:first-child {
+    border-top: #f8f8f8 solid 1px;
+  }
 }

@@ -88,13 +88,11 @@
     z-index: 100;
     width: 90vw;
     height: 80vh;
-    /* border-radius: 30px; */
-    /* padding: 0 3em; */
+    margin-top: 10vh;
     box-shadow: 0px 0px 10px #969696;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     padding: 8vh;
   }
