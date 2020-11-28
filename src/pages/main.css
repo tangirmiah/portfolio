@@ -6,3 +6,9 @@
   box-sizing: border-box;
   font-family: "Assistant", sans-serif;
 }
+
+body {
+  background-color: rgb(3, 62, 107);
+  display: flex;
+  justify-content: center;
+}

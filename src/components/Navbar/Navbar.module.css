@@ -1,5 +1,6 @@
 @media screen and (min-width: 1201px) {
   .Nav {
+    max-width: 1900px;
     background-color: #033e6b;
     position: fixed;
     width: 100%;

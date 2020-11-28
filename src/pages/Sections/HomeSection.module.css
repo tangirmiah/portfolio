@@ -3,6 +3,7 @@
     height: 100vh;
     width: 100vw;
     background-color: rgb(3, 62, 107);
+    max-width: 1900px;
   }
   .ParticleBg {
     height: 100%;

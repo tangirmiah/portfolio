@@ -1,17 +1,18 @@
 @keyframes arrowMove {
   0% {
-    top: 0px;
+    top: -20px;
   }
   50% {
-    top: 20px;
-  }
-  100% {
     top: 0px;
   }
+  100% {
+    top: -20px;
+  }
 }
+
 @media screen and (min-width: 1201px) {
   .HeroContainer {
-    position: absolute;
+    max-width: 1900px;
     height: 100%;
     width: 100%;
     top: 0;
@@ -21,13 +22,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
     /* padding: 30vh 2em 0; */
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .Writing {
     padding-top: 10vh;
     padding-left: 4vw;
+    overflow: hidden;
   }
   .HeroContainer a {
     position: relative;
@@ -71,7 +72,7 @@
     justify-content: center;
 
     /* padding: 30vh 2em 0; */
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .Writing {
     padding-top: 10vh;

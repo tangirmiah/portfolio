@@ -87,14 +87,15 @@
     background-color: #f8f8f8;
     z-index: 100;
     width: 90vw;
-    height: 80vh;
-    margin-top: 10vh;
+    max-height: 100vh;
+    /* margin-top: 10vh; */
     box-shadow: 0px 0px 10px #969696;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 8vh;
+    padding: 1vh 2vw;
   }
 
   .InputContainer {
@@ -117,7 +118,6 @@
     font-weight: 600;
   }
   .Form {
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -141,7 +141,7 @@
 
   .FormTitle {
     color: #22557c;
-    font-size: 4em;
+    font-size: 2em;
   }
 
   .SubmitButton {
@@ -149,7 +149,7 @@
     color: #22557c;
     background-color: white;
     border: #9696968a solid 1px;
-    padding: 1vh;
+    /* padding: 1vh; */
     font-size: 2.5em;
     display: flex;
     justify-content: center;
@@ -162,8 +162,5 @@
     background-color: #22557c;
     color: #f8f8f8;
     transition: 0.2s ease-in-out;
-  }
-  .SubmitButton svg {
-    font-size: 1.4em;
   }
 }

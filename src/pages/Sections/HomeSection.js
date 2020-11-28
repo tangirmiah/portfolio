@@ -9,6 +9,9 @@ const HomeSection = () => {
       <Hero />
       <Particles
         params={{
+          backgroundMode: {
+            enable: true,
+          },
           particles: {
             size: {
               value: 4,
