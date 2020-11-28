@@ -11,6 +11,7 @@ const HomeSection = () => {
         params={{
           backgroundMode: {
             enable: true,
+            zIndex: -1,
           },
           particles: {
             size: {
