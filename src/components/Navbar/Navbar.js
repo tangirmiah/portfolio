@@ -12,6 +12,9 @@ const Navbar = props => {
   const [showMenu, setShowMenu] = useState(false)
   const handleMenu = () => {
     setShowMenu(!showMenu)
+    !showMenu
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "")
   }
   return (
     <>

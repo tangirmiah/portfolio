@@ -54,9 +54,10 @@
 @media screen and (min-width: 359px) and (max-width: 767px) {
   .Navigation {
     width: 100vw;
-    height: 80vh;
-    padding-top: 4vh;
+    /* height: 80vh; */
+
     /* align-self: flex-start; */
+    padding: 6vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +66,7 @@
   .Navigation a {
     width: 100vw;
     padding: 3vh;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #f8f8f8;
     text-decoration: none;
     margin-right: 20px;

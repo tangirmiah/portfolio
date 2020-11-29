@@ -37,7 +37,7 @@
 @media screen and (min-width: 359px) and (max-width: 767px) {
   .NavIcons {
     width: 70vw;
-    height: 20vh;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
