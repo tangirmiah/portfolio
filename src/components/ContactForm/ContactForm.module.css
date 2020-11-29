@@ -164,3 +164,84 @@
     transition: 0.2s ease-in-out;
   }
 }
+
+@media screen and (min-width: 359px) and (max-width: 767px) {
+  .ContactFormContainer {
+    background-color: #f8f8f8;
+    z-index: 100;
+    width: 97vw;
+    max-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1vh 2vw;
+  }
+
+  .InputContainer {
+    width: 100%;
+  }
+  .InputContainer input {
+    height: 2em;
+    padding: 1em;
+    margin-bottom: 3vh;
+  }
+
+  .InputContainer textarea {
+    height: 14vh;
+    padding: 1em;
+    margin-bottom: 3vh;
+  }
+  .InputContainer label {
+    color: #22557c;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  .Form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .FormInput {
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 500;
+    width: 100%;
+    color: #22557c;
+    border: #9696968a solid 1px;
+    resize: none;
+  }
+  .FormInput:focus {
+    outline: none !important;
+
+    border: #22557c solid 2px;
+  }
+
+  .FormTitle {
+    color: #22557c;
+    font-size: 2.2em;
+  }
+
+  .SubmitButton {
+    width: 100%;
+    color: #22557c;
+    background-color: white;
+    border: #9696968a solid 1px;
+    /* padding: 1vh; */
+    font-size: 2.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+  .SubmitButton:hover {
+    cursor: pointer;
+    background-color: #22557c;
+    color: #f8f8f8;
+    transition: 0.2s ease-in-out;
+  }
+}

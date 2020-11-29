@@ -32,7 +32,12 @@ const ContactForm = props => {
         ...formState,
       }),
     })
-      .then(() =>
+      .then(() => {
+        setFormState({
+          fullname: "",
+          email: "",
+          message: "",
+        })
         toast.success("Your message was delivered!", {
           position: "bottom-right",
           autoClose: 5000,
@@ -42,7 +47,7 @@ const ContactForm = props => {
           draggable: false,
           progress: undefined,
         })
-      )
+      })
       .catch(error =>
         toast.success("There was an error with your message", {
           position: "bottom-right",

@@ -33,3 +33,22 @@
     color: rgb(100, 166, 216);
   }
 }
+
+@media screen and (min-width: 359px) and (max-width: 767px) {
+  .NavIcons {
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .IconColor {
+    font-size: 3em;
+    color: #f8f8f8;
+  }
+
+  .IconColor:hover {
+    color: rgb(100, 166, 216);
+  }
+}

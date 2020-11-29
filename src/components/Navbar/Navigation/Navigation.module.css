@@ -49,7 +49,26 @@
     margin-right: 20px;
     border-bottom: #f8f8f8 solid 1px;
   }
-  .Navigation a:first-child {
-    border-top: #f8f8f8 solid 1px;
+}
+
+@media screen and (min-width: 359px) and (max-width: 767px) {
+  .Navigation {
+    width: 100vw;
+    height: 80vh;
+    padding-top: 4vh;
+    /* align-self: flex-start; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Navigation a {
+    width: 100vw;
+    padding: 3vh;
+    font-size: 1.8em;
+    color: #f8f8f8;
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom: #f8f8f8 solid 1px;
   }
 }

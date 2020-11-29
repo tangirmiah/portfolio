@@ -4,7 +4,9 @@ import Navigation from "./Navigation/Navigation"
 import NavIcon from "./NavIcons/NavIcons"
 import { AiOutlineMenu } from "react-icons/ai"
 import { MdClose } from "react-icons/md"
-
+import Burger from "@animated-burgers/burger-squeeze"
+// don't forget the styles
+import "@animated-burgers/burger-squeeze/dist/styles.css"
 import sal from "sal.js"
 const Navbar = props => {
   const [showMenu, setShowMenu] = useState(false)
@@ -14,11 +16,9 @@ const Navbar = props => {
   return (
     <>
       <div className={classes.NavMobile}>
-        <div
-          className={showMenu ? classes.MenuBtnClose : classes.MenuBtn}
-          onClick={handleMenu}
-        >
-          {showMenu ? <MdClose /> : <AiOutlineMenu />}
+        <div className={showMenu ? classes.MenuBtnClose : classes.MenuBtn}>
+          {/* {showMenu ? <MdClose /> : <AiOutlineMenu />} */}
+          <Burger isOpen={showMenu} onClick={handleMenu} />
         </div>
 
         <nav
