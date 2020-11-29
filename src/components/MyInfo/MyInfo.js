@@ -16,7 +16,6 @@ const MyInfo = props => {
       }
     }
   `)
-  console.log(data.profile.childImageSharp.fluid)
   return (
     <div className={classes.Container}>
       <div className={classes.InfoContainer}>
