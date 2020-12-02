@@ -32,9 +32,10 @@ const Navbar = props => {
           <NavIcon />
         </nav>
       </div>
+
       <div className={classes.NavLarge}>
         <nav className={classes.Nav} data-sal="slide-up">
-          <Navigation handleMenu={handleMenu} />
+          <Navigation />
           <NavIcon />
         </nav>
       </div>

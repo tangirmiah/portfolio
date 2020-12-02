@@ -10,11 +10,12 @@
   flex-flow: column;
   justify-content: center;
 } */
-@media screen and (min-width: 1201px) {
-  .Main {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
+
+.Main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  
 }

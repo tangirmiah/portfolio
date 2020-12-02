@@ -11,4 +11,5 @@ body {
   background-color: rgb(3, 62, 107);
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
