@@ -76,7 +76,6 @@ const ContactForm = props => {
         pauseOnHover
       />
       <div className={classes.ContactFormContainer}>
-        <h1 className={classes.FormTitle}>Contact me</h1>
         <form
           name="contact form"
           method="POST"
@@ -84,6 +83,7 @@ const ContactForm = props => {
           className={classes.Form}
           onSubmit={handleSubmit}
         >
+          <h1 className={classes.FormTitle}>Contact me</h1>
           <input type="hidden" name="form-name" value="contact form" />
 
           <div className={classes.InputContainer}>

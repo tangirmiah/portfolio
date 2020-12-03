@@ -45,7 +45,6 @@
   }
   .Internal {
     height: 80vh;
-    overflow-y: scroll;
   }
 
   .External {
@@ -201,7 +200,7 @@
     font-size: 1em;
   }
   .Internal p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .External {
