@@ -1,9 +1,14 @@
 .FooterContainer {
+  position: sticky;
   background-color: #033e6b;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.3em;
   color: #f8f8f8;
+}
+
+.Icon {
+  margin: 0.7em;
+  max-width: 1.5em;
 }

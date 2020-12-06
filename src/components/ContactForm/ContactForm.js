@@ -1,9 +1,10 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import classes from "./ContactForm.module.css"
 import { RiMailSendLine } from "react-icons/ri"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-
+import AOS from "aos"
+import "aos/dist/aos.css"
 const ContactForm = props => {
   const [formState, setFormState] = useState({
     fullname: "",
@@ -62,6 +63,9 @@ const ContactForm = props => {
     event.preventDefault()
   }
 
+  useEffect(() => {
+    AOS.init({})
+  }, [])
   return (
     <>
       <ToastContainer
@@ -82,6 +86,8 @@ const ContactForm = props => {
           data-netlify="true"
           className={classes.Form}
           onSubmit={handleSubmit}
+          data-aos-delay="300"
+          data-aos="fade-up"
         >
           <h1 className={classes.FormTitle}>Contact me</h1>
           <input type="hidden" name="form-name" value="contact form" />

@@ -1,9 +1,12 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Carousel from "react-elastic-carousel"
 import classes from "./SliderContainer.module.css"
 import Project from "../Project/Project"
 import "./sliderStyle.css"
 import { graphql, useStaticQuery } from "gatsby"
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 const SliderContainer = props => {
   const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
@@ -44,9 +47,13 @@ const SliderContainer = props => {
       live={project.node.frontmatter.live}
     />
   ))
-
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    })
+  }, [])
   return (
-    <div className={classes.SliderContainer}>
+    <div className={classes.SliderContainer} data-aos="fade-up">
       <h1 className={classes.Title}>My Projects</h1>
       <Carousel itemsToShow={3} breakPoints={breakPoints}>
         {slides}

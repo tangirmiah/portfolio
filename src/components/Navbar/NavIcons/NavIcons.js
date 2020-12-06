@@ -13,13 +13,13 @@ const NavIcons = () => {
       <a href="https://github.com/tangirmiah" target="blank">
         <AiOutlineGithub className={classes.IconColor} />
       </a>
-      <a href="https://github.com/tangirmiah" target="blank">
+      <a href="https://linkedin.com/in/tangirmiah/" target="blank">
         <AiFillLinkedin className={classes.IconColor} />
       </a>
-      <a href="https://github.com/tangirmiah" target="blank">
+      <a href="https://twitter.com/tangirmiah" target="blank">
         <AiFillTwitterCircle className={classes.IconColor} />
       </a>
-      <a href="https://github.com/tangirmiah" target="blank">
+      <a href="#" target="blank">
         <AiFillInstagram className={classes.IconColor} />
       </a>
     </div>
