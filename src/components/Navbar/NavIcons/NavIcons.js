@@ -19,7 +19,7 @@ const NavIcons = () => {
       <a href="https://twitter.com/tangirmiah" target="blank">
         <AiFillTwitterCircle className={classes.IconColor} />
       </a>
-      <a href="#" target="blank">
+      <a href="https://www.instagram.com/_badhon/" target="blank">
         <AiFillInstagram className={classes.IconColor} />
       </a>
     </div>

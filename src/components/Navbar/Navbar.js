@@ -2,8 +2,7 @@ import React, { useState } from "react"
 import classes from "./Navbar.module.css"
 import Navigation from "./Navigation/Navigation"
 import NavIcon from "./NavIcons/NavIcons"
-import { AiOutlineMenu } from "react-icons/ai"
-import { MdClose } from "react-icons/md"
+
 import Burger from "@animated-burgers/burger-squeeze"
 // don't forget the styles
 import "@animated-burgers/burger-squeeze/dist/styles.css"
