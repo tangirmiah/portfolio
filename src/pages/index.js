@@ -12,7 +12,7 @@ import { graphql, useStaticQuery } from "gatsby"
 export default function Home() {
   const data = useStaticQuery(graphql`
     query {
-      icon: allFile(filter: { name: { eq: "Tangir_32x32" } }) {
+      icon: allFile(filter: { name: { eq: "Tangir_1080x1080" } }) {
         edges {
           node {
             publicURL
