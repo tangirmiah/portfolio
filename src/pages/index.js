@@ -6,7 +6,7 @@ import AboutSection from "./Sections/AboutSection"
 import ProjectsSection from "./Sections/ProjectsSection"
 import ContactSection from "./Sections/ContactSection"
 import Helmet from "react-helmet"
-import og from "../assets/logo/Tangir_1080x1080.png"
+import og from "../assets/logo/Tangir_32x32.png"
 
 export default function Home() {
   return (
