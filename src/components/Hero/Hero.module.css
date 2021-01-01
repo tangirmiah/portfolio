@@ -108,7 +108,7 @@
   }
 }
 
-@media screen and (min-width: 359px) and (max-width: 767px) {
+@media screen and (min-width: 357px) and (max-width: 767px) {
   .HeroContainer {
     position: absolute;
     height: 100%;

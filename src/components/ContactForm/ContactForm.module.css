@@ -166,7 +166,7 @@
   }
 }
 
-@media screen and (min-width: 359px) and (max-width: 767px) {
+@media screen and (min-width: 357px) and (max-width: 767px) {
   .ContactFormContainer {
     background-color: #f8f8f8;
     z-index: 100;
