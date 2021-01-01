@@ -13,14 +13,14 @@ export default function Home() {
     <>
       <Helmet>
         <title>Tangir Miah Portfolio</title>
-        <meta property="og:url" content="https://tangir.dev/" />
-        <meta property="og:title" content="Portfolio Tangir Miah" />
-        <meta property="og:site_name" content="tangir.dev" />
+        <meta property="og:url" content="https://tangir.dev/"></meta>
+        <meta property="og:title" content="Portfolio Tangir Miah"></meta>
+        <meta property="og:site_name" content="tangir.dev"></meta>
         <meta
           property="og:description"
           content="This is my portfolio where i showcase my projects and you can learn something about me"
-        />
-        <meta property="og:image" content={og} data-rh="true" />
+        ></meta>
+        <meta property="og:image" content={og} data-rh="true"></meta>
       </Helmet>
       <Layout>
         <HomeSection />
