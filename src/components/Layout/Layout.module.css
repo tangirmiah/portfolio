@@ -3,14 +3,8 @@
   max-height: 100vh;
   max-width: 1900px;
 
-  /* overflow-x: hidden; */
 }
 
-/* .Main {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-} */
 
 .Main {
   display: flex;

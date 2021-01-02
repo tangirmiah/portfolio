@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (min-width: 357px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .Container404 {
     height: 100vh;
     width: 100vw;
@@ -84,6 +84,7 @@
   }
   .Content p {
     font-size: 2em;
+    text-align: center;
   }
 
   .ParticleBg {
