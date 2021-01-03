@@ -22,7 +22,7 @@ export default function Home() {
       }
     }
   `)
-  console.log(data.icon.edges[0].node.publicURL)
+
   return (
     <>
       <Helmet>

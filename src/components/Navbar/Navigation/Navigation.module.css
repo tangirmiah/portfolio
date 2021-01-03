@@ -1,8 +1,16 @@
 @media screen and (min-width: 1201px) {
+  .Logo {
+    width: 4em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .Navigation {
     /* align-self: flex-start; */
-    margin-left: 5vw;
+    margin-left: 2vw;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     /* width: 20%; */
   }
@@ -31,6 +39,9 @@
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
+  .Logo {
+    display: none;
+  }
   .Navigation {
     width: 100vw;
     height: 80vh;
@@ -51,7 +62,10 @@
   }
 }
 
-@media screen  and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .Logo {
+    display: none;
+  }
   .Navigation {
     width: 100vw;
     /* height: 80vh; */
